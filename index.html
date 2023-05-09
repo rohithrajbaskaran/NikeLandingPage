@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Nike Website Landing Page</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="LLQYMT-nike-logo-design-transparent-image.png" width="100px" height="100px"></a>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li class="has-submenu">
+                    <a href="#">New Releases</a>
+                    <ul class="submenu">
+                      <li><a href="#">Men</a></li>
+                      <li><a href="#">Women</a></li>
+                      <li><a href="#">Kids</a></li>
+                    </ul>
+                <li class="has-submenu">
+                    <a href="#">About Us</a>
+                    <ul class="submenu">
+                      <li><a href="#">Mission</a></li>
+                      <li><a href="#">Vision</a></li>
+                      <li><a href="#">Values</a></li>
+                    </ul>
+                  </li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Sign In</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="&#128269;   Search...">
+            </div>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Rise to the challenge.<br> <span>Unleash your potential.</span><br></h2>
+                <a class="shopNow" href="#">Shop Now</a>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img1.png" class="nike">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img1.png" onclick="imgSlider('img1.png');changeCircleColor('#FDF7C5')" width="100px" height="85px"></li>
+            <li><img src="img2.png" onclick="imgSlider('img2.png');changeCircleColor('#BBDEFB')" width="100px" height="85px"></li>
+            <li><img src="img3.png" onclick="imgSlider('img3.png');changeCircleColor('#FDE6C3')" width="110px" height="95px"></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything)
+        {
+            document.querySelector('.nike').src=anything;
+        }
+
+        function changeCircleColor(color) 
+        {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+        
+    </script>
+</body>
+</html>
